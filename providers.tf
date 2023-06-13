@@ -6,10 +6,10 @@ terraform {
     }
   }
    backend "azurerm" {
-    resource_group_name  = "StorageAccount-ResourceGroup"
-    storage_account_name = "abcd1234"
-    container_name       = "tfstate"
-    key                  = "prod.terraform.tfstate"
+    resource_group_name  = "veda-rg"
+    storage_account_name = "vedaterraformlab"
+    container_name       = "veda-container"
+    key                  = "terraform.tfstate"
   }
 }
 provider "azurerm" {
